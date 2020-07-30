@@ -142,7 +142,7 @@ spec:
         # Replace the following URL to change the Git repository used by Flux.
         # HTTP basic auth credentials can be supplied using environment variables:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
-        - --git-url=git@github.com:Dinovoh/AWS_EKS_GitOps
+        - --git-url=git@github.com:Dinovoh/AWS_EKS_GitOps.git
         - --git-branch=master
         # Include this if you want to restrict the manifests considered by flux
         # to those under the following relative paths in the git repository
@@ -178,7 +178,7 @@ spec:
 
         # Additional arguments
         - --sync-garbage-collection
-        - --git-poll-interval=1m
+
       # Optional DNS settings, configuring the ndots option may resolve
       # nslookup issues on some Kubernetes setups.
       # dnsPolicy: "None"
